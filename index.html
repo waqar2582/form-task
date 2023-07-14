@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>.mainContainer{
+      
+      background-color: rgb(106, 17, 37);
+      display: flex;
+      align-items: center;
+      align-content: center;
+      height: 80%;
+      width: 75%;
+      margin: auto;
+    }
+    .mainContainer input{
+      border-radius: 50px;
+      margin: 5px 5px;
+    }
+    h1{
+        text-align: center;
+        color: rgb(245, 245, 245);
+    }
+    
+    .inputAll{
+        display: flex;
+        margin: 5px 50px;
+        color: rgb(212, 212, 212);
+    }
+    .inputAll select{
+      border-radius: 5px;
+      margin: 5px;
+    }
+    
+    .labelAll{
+        color: rgb(212, 212, 212);
+        display: flex;
+        margin: 5px 10px;
+        width: 200px;
+        border-radius: px;
+        
+    }
+    #inpt label{
+        margin: 0 8px;
+    }
+    #selection label{
+        margin: 0 8px;
+    }
+    b{
+    margin: 5px;
+}
+.butt{
+    padding: 20px;
+    text-align: center;
+    
+}
+button{
+    border: none;
+    border-radius: 50px;
+    border-style: dotted;
+    background-color: rgb(104, 13, 53);
+    color: rgb(202, 206, 204);
+    margin: 5px;
+    padding: 5px;
+}
+.butt input{
+    border: none;
+    border-radius: 50px;
+    border-style: dotted;
+    margin: 5px;
+    padding: 5px;
+    background-color: rgb(104, 13, 53);
+    color: rgb(222, 231, 228);
+    
+}
+
+
+.bolt td {
+    text-align: center;
+}
+</style>
+</head>
+
+<body>
+    <div class="mainContainer">
+        <form>
+          <h1>Student Registration Form</h1>
+        <div class="labels"></div>
+        <div class="inputAll">
+          <div class="labelAll">
+            <label for="first_name">First Name</label>
+          </div>
+          <input type="text" id="first_name" maxlength="30" />
+          <b>(max 30 charachters a-z and A-Z)</b>
+        </div>
+        <div class="inputAll">
+          <div class="labelAll">
+            <label for="last_name">Last Name</label>
+          </div>
+          <input type="text" id="last_name" />
+          <b>(max 30 charachters a-z and A-Z)</b>
+        </div>
+        <div class="inputAll">
+          <div class="labelAll">
+            <label for="dob">DATE OF BIRTH</label>
+          </div>
+
+          <select id="date">
+            <option value="Day">Day:</option>
+            <option value="Day">Mon</option>
+            <option value="Day">Tue</option>
+            <option value="Day">Wed</option>
+            <option value="Day">Thu</option>
+            <option value="Day">Fri</option>
+            <option value="Day">Sat</option>
+            <option value="Day">Sun</option>
+          </select>
+
+          <select id="month">
+            <option value="month">Month:</option>
+            <option value="month">Jan</option>
+            <option value="month">Feb</option>
+            <option value="month">Mar</option>
+            <option value="month">Apr</option>
+            <option value="month">May</option>
+            <option value="month">Jun</option>
+            <option value="month">Jul</option>
+            <option value="month">Aug</option>
+            <option value="month">Sep</option>
+            <option value="month">Oct</option>
+            <option value="month">Nov</option>
+            <option value="month">Dec</option>
+          </select>
+
+          <select id="year">
+            <option value="year">Year:</option>
+            <option value="year">2023</option>
+            <option value="year">2024</option>
+            <option value="year">2025</option>
+            <option value="year">2026</option>
+            <option value="year">2027</option>
+            <option value="year">2028</option>
+            <option value="year">2029</option>
+            <option value="year">2030</option>
+            <option value="year">2031</option>
+            <option value="year">2032</option>
+            <option value="year">2033</option>
+            <option value="year">2034</option>
+            <option value="year">2035</option>
+            <option value="year">2036</option>
+            <option value="year">2037</option>
+            <option value="year">2038</option>
+            <option value="year">2039</option>
+            <option value="year">2040</option>
+          </select>
+        </div>
+        <div class="inputAll">
+          <div class="labelAll">
+            <label for="number">EMAIL </label>
+          </div>
+          <input type="text" id="number" />
+        </div>
+        <div class="inputAll">
+          <div class="labelAll">
+            <label for="number">MOBILE NUMBER</label>
+          </div>
+          <input type="text" id="number" /> <b>(10 digit number)</b>
+        </div>
+
+        <div class="inputAll">
+          <div class="labelAll">
+            <label for="male">GENDER</label>
+          </div>
+          <label for="male">Male</label>
+          <input type="radio" id="male" name="myGender" />
+          <label for="female">Female</label>
+          <input type="radio" id="female" name="myGender" />
+        </div>
+
+        <div class="inputAll">
+          <div class="labelAll">
+            <label for="text_area">ADDRESS</label>
+          </div>
+          <textarea name="mytext" id="text_area" cols="30" rows="10"></textarea>
+        </div>
+
+        <div class="inputAll">
+          <div class="labelAll">
+            <label for="city">CITY</label>
+          </div>
+          <input type="text" id="city" /><b>
+            (max 30 charachters a-z and A-Z)</b
+          >
+        </div>
+
+        <div class="inputAll">
+          <div class="labelAll">
+            <label for="number">PIN CODE</label>
+          </div>
+          <input type="text" id="number" /> <b>(6 digit number)</b>
+        </div>
+
+        <div class="inputAll">
+          <div class="labelAll">
+            <label for="stat">STATE</label>
+          </div>
+          <input type="text" id="stat" /><b>
+            (max 30 charachters a-z and A-Z)</b
+          >
+        </div>
+
+        <div class="inputAll">
+          <div class="labelAll">
+            <label for="country">COUNTRY</label>
+          </div>
+          <input type="country" id="country" />
+        </div>
+
+        <div class="inputAll" id="inpt">
+          <div class="labelAll">
+            <label for="drawing">HOBBIES</label>
+          </div>
+          <label for="drawing">Drawing</label>
+          <input type="checkbox" id="drawing" />
+
+          <label for="singing">Singing</label>
+
+          <input type="checkbox" id="singing" />
+
+          <label for="dancing">Dancing</label>
+
+          <input type="checkbox" id="dancing" />
+
+          <label for="sketching">Sketching</label>
+
+          <input type="checkbox" id="sketching" />
+                
+                <label for="write">Others</label>
+                <input type="text" id="write" />
+              </div>
+        <div class="inputAll">
+          <div class="labelAll">
+            <label for="">QAULIFICATION</label>
+          </div>
+          <table>
+            <tr>
+              <th>SL:NO EXAMINATON</th>
+              <th></th>
+              <th>Board</th>
+              <th>Percentage</th>
+              <th>Passing Year</th>
+            </tr>
+
+            <tr>
+              <td>1</td>
+              <td>Class X</td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+            </tr>
+
+            <tr>
+              <td>2</td>
+              <td>Class XII</td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Graduation</td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Masters</td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+            </tr>
+            <tr class="bolt">
+              <td></td>
+              <td></td>
+              <td><b>(10 char max)</b></td>
+              <td><b>(Upto 2 decimal)</b></td>
+            </tr>
+          </table>
+        </div>
+        <div class="inputAll" id="selection">
+          <div class="labelAll">
+            <label for="applied">COURSES APPLIED FOR</label>
+          </div>
+           <label for="bca">BCA</label>
+            <input type="radio" name="mySelection" id="bca">
+           <label for="b.com">B.com</label>
+            <input type="radio" name="mySelection" id="b.com">
+           <label for="b.sc">B.Sc</label>
+            <input type="radio" name="mySelection" id="b.sc">
+           <label for="b.a">B.A</label>
+            <input type="radio" name="mySelection" id="b.a">
+        </div>
+        <div class="butt">
+          <button>Submit</button>
+          <input type="reset">
+          
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
